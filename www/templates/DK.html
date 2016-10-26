@@ -1,0 +1,35 @@
+      <ion-view view-title="David Kyriakidis">
+      <ion-pane>
+      <ion-content class="test" overflow-scroll="true">
+      <ion-refresher
+      on-refresh="doRefresh()"
+      pulling-text="Pull to refresh..."
+      pulling-icon="ion-ionic"
+      refreshing-text="Refreshing!"
+      refreshing-icon="ion-ionic">
+    </ion-refresher>
+
+    <div class="list card" ng-repeat="story in davs">
+
+      <div class="item item-avatar">
+        <img src="img/DK.jpg">
+        <h2>David Kyriakidis</h2>
+        <p>Date: {{story.publishedDate}} </p>
+      </div>
+
+      <div class="item item-body">
+        {{story.title | utff}}
+        <p>
+          {{story.contentSnippet | utff }}
+        </p>
+      </div>
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a ng-href="{{story.link}}" onclick='window.open(this.href, "_system", "location=yes"); return false;' class="tab-item"><i class="icon icon ion-search"></i> Voir l'article sur le site</a>
+        <a ng-click="shareAnywhere('{{story.contentSnippet | utff}}','{{story.title | utff}}','{{story.link}}')" class="tab-item"><i class="icon ion-share"></i> Partager</a>
+
+
+      </div>
+    </div>
+  </ion-content>
+</ion-pane>
+</ion-view>

@@ -1,0 +1,35 @@
+      <ion-view view-title="Damien Menu">
+      <ion-pane>
+      <ion-content class="test" overflow-scroll="true">
+      <ion-refresher
+      on-refresh="doRefresh()"
+      pulling-text="Pull to refresh..."
+      pulling-icon="ion-ionic"
+      refreshing-text="Refreshing!"
+      refreshing-icon="ion-ionic">
+    </ion-refresher>
+
+  </ion-refresher>
+  <div class="list card" ng-repeat="story in dams">
+
+    <div class="item item-avatar">
+      <img src="img/DM.jpg">
+      <h2>Damien Menu</h2>
+    </div>
+
+    <div class="item item-body">
+      <img class="full-image" src="{{story.content | image}}">
+      <p>
+        {{story.contentSnippet | utf}}
+      </p>
+    </div>
+    <div class="item tabs tabs-secondary tabs-icon-left">
+      <a ng-href="{{story.link}}" onclick='window.open(this.href, "_system", "location=yes"); return false;' class="tab-item"><i class="icon icon ion-search"></i> Voir l'article sur le site</a>
+      <a ng-click="shareAnywhere('{{story.contentSnippet | utf}}','{{story.link}}')" class="tab-item"><i class="icon ion-share"></i> Partager</a>
+
+
+    </div>
+  </div>
+</ion-content>
+</ion-pane>
+</ion-view>

@@ -1,0 +1,9 @@
+.test {
+  background-image: url(yeahhh.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover; }
+
+.trans {
+  background-color: transparent; }
