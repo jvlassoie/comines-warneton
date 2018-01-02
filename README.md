@@ -1,4 +1,4 @@
-<span style=“color:red;”>Pour l'instant l'app ne fonctionne plus car l'API de google qui convertissaait le l'XML en JSON n'est plus :(</span>
+**Pour l'instant l'app ne fonctionne plus car l'API de google qui convertissaait le l'XML en JSON n'est plus :(**
 
 # App mobile #
 
