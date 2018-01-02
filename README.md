@@ -1,4 +1,4 @@
-**Pour l'instant l'app ne fonctionne plus car l'API de google qui convertissaait le l'XML en JSON n'est plus :(**
+**Pour l'instant l'app ne fonctionne plus car l'API de google qui convertissait le l'XML en JSON n'est plus :(**
 
 # App mobile #
 
